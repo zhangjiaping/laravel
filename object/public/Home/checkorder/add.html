@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0150)http://order.mi.com/address/add.php?id=10170419930501426&area=648012&bts=adb97d51c97dc97d7529d8bc977b1230&action=edit&address_match=common&hastv=false -->
+<html xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        
+        <link rel="stylesheet" type="text/css" href="base.min.css">
+        <link rel="stylesheet" type="text/css" href="address-edit.min.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" async="" src="unjcV2.js"></script><script type="text/javascript" async="" src="mstr(4).js"></script><script type="text/javascript" async="" src="jquery.statData.min.js"></script><script src="hm.js"></script><script type="text/javascript" async="" src="xmst(1).js"></script>
+        <script type="text/javascript" src="./a.js"></script>
+<script>
+var addressConfig = {
+    addressId : '10170419930501426',
+    addressMatch : 'common',
+    addressMatchData : new Function('return ' + 'data')
+};
+</script>
+<script type="text/javascript">
+    var a = window.getElementById('J_save');
+    a.onclick = function(){
+        click(4);
+    }   
+  
+</script>
+<form action="{{ url('Home/checkout') }}" method='post' id='address' name='myform'>
+<div class="address-edit-box">
+    <div class="box-main">
+        <div class="form-section form-section-active">
+            <label class="input-label" for="user_name">姓名</label>
+            <input class="input-text J_addressInput" type="text" id="user_name" name="user_name" placeholder="收货人姓名">
+        </div>
+        <div class="form-section">
+            <label class="input-label" for="user_phone">手机号</label>
+            <input class="input-text J_addressInput" type="text" id="user_phone" name="user_phone" placeholder="182****3617">
+        </div>
+        <div class="form-section form-select-2 clearfix">
+            <!-- <select name="province" id="J_province" class="select-province" disabled>
+                <option value="0">省份/自治区</option>
+            </select>
+            <select name="city" id="J_city" class="select-city" disabled>
+                <option value="0">省份/自治区</option>
+            </select> -->
+
+            <div class="xm-select select-province">
+                <div class="dropdown">
+                    <label class="iconfont" for="J_province"></label>
+                    <select name="province" id="J_province"><option value="0">省份/自治区</option><option zipcode="0" value="2">北京</option><option zipcode="0" value="3">天津</option><option zipcode="0" value="4">河北</option><option zipcode="0" value="5" selected="">山西</option><option zipcode="0" value="6">内蒙古</option><option zipcode="0" value="7">辽宁</option><option zipcode="0" value="8">吉林</option><option zipcode="0" value="9">黑龙江</option><option zipcode="0" value="10">上海</option><option zipcode="0" value="11">江苏</option><option zipcode="0" value="12">浙江</option><option zipcode="0" value="13">安徽</option><option zipcode="0" value="14">福建</option><option zipcode="0" value="15">江西</option><option zipcode="0" value="16">山东</option><option zipcode="0" value="17">河南</option><option zipcode="0" value="18">湖北</option><option zipcode="0" value="19">湖南</option><option zipcode="0" value="20">广东</option><option zipcode="0" value="21">广西</option><option zipcode="0" value="22">海南</option><option zipcode="0" value="23">重庆</option><option zipcode="0" value="24">四川</option><option zipcode="0" value="25">贵州</option><option zipcode="0" value="26">云南</option><option zipcode="0" value="27">西藏</option><option zipcode="0" value="28">陕西</option><option zipcode="0" value="29">甘肃</option><option zipcode="0" value="30">青海</option><option zipcode="0" value="31">宁夏</option><option zipcode="0" value="32">新疆</option></select>
+                </div>
+            </div>
+            <div class="xm-select select-city">
+                <div class="dropdown">
+                    <label class="iconfont" for="J_city"></label>
+                    <select name="city" id="J_city"><option value="0">城市/地区</option><option zipcode="0" value="49">太原市</option><option zipcode="0" value="50">大同市</option><option zipcode="0" value="51">阳泉市</option><option zipcode="0" value="52">长治市</option><option zipcode="0" value="53">晋城市</option><option zipcode="0" value="54" selected="">朔州市</option><option zipcode="0" value="55">晋中市</option><option zipcode="0" value="56">运城市</option><option zipcode="0" value="57">忻州市</option><option zipcode="0" value="58">临汾市</option><option zipcode="0" value="59">吕梁市</option></select>
+                </div>
+            </div>
+        </div>
+        <div class="form-section clearfix form-select-2">
+            <!-- <select name="county" id="J_county" class="select-county" disabled>
+                <option value="0">省份/自治区</option>
+            </select>
+
+            <select name="county" id="J_area" class="select-area hide" disabled>
+                <option value="0">配送区域</option>
+            </select> -->
+
+            <div class="xm-select select-county">
+                <div class="dropdown">
+                    <label class="iconfont" for="J_county"></label>
+                    <select name="county" id="J_county"><option value="0">区/县</option><option zipcode="038500" value="648" selected="">朔城区</option><option zipcode="038600" value="649">平鲁区</option><option zipcode="036900" value="650">山阴县</option><option zipcode="037600" value="651">应县</option><option zipcode="037200" value="652">右玉县</option><option zipcode="038300" value="653">怀仁县</option></select>
+                </div>
+            </div>
+           
+        </div>
+        <div class="address-supp-tip hide" id="J_addressSuppTip">您的收货地址需要补全街道信息</div>
+        <div class="form-section form-section-active">
+            <label class="input-label" for="user_adress">详细地址</label>
+            <textarea class="input-text J_addressInput" type="text" id="user_adress" name="user_adress" placeholder="详细地址，路名或街道名称，门牌号"></textarea>
+        </div>
+        <div class="form-section form-section-active">
+            <label class="input-label" for="user_zipcode">邮政编码</label>
+            <input class="input-text J_addressInput" type="text" id="user_zipcode" name="user_zipcode">
+        </div>
+        <div class="form-section">
+            <label class="input-label" for="user_tag">地址标签</label>
+            <input class="input-text J_addressInput" type="text" id="user_tag" name="user_tag" placeholder="如&quot;家&quot;、&quot;公司&quot;。限5个字内">
+        </div>
+    </div>
+    <!-- onclick='document.form.myform.submit();' -->
+    <input type='submit' value='ok'>
+    <div class="form-confirm clearfix">
+        <a href="javascript:void(0);" class="btn btn-primary" id="J_save">保存</a>
+        <a href="javascript:void(0);" class="btn btn-gray" id="J_cancel">取消</a>
+    </div>
+</div>    
+<form>  
+    
+    <script src="base.min.js"></script>
+    <script>
+        MI.namespace('GLOBAL_CONFIG');
+        MI.GLOBAL_CONFIG = {
+            orderSite:'http://order.mi.com',
+            wwwSite:'//www.mi.com',
+            cartSite:'//cart.mi.com',
+            itemSite:'//item.mi.com',
+            listSite:'//list.mi.com',
+            searchSite:'//search.mi.com',
+            mySite:'//my.mi.com',
+            damiaoSite:'https://tp.hd.mi.com/',
+            damiaoGoodsId: '',
+            logoutUrl:'http://order.mi.com/site/logout',
+            staticSite: '//static.mi.com',
+            quickLoginUrl:'https://account.xiaomi.com/pass/static/login.html'
+        };
+        MI.setLoginInfo.orderUrl = MI.GLOBAL_CONFIG.orderSite + '/user/order';
+        MI.setLoginInfo.logoutUrl = MI.GLOBAL_CONFIG.logoutUrl;
+        MI.setLoginInfo.init(MI.GLOBAL_CONFIG);
+
+        jQuery(function ($) {
+        //        var oLogin = new XIAOMI.app.miniLogin();
+        //        oLogin.init();
+        //        XIAOMI.app.search.init();
+            MI.miniCart.init();
+            MI.updateMiniCart();
+        //        XIAOMI.app.navMenus.init($('.J_menuNavMain'), {
+        //            menuSelector: '.nav-main-item',
+        //            submenuSelector: '.nav-main-children',
+        //            effect: 'slide',
+        //            triggerEvent: 'hover'
+        //        });
+        //        XIAOMI.app.navCategory.init();
+        //        XIAOMI.app.footer.init();
+        });
+    </script>
+    <script type="text/javascript" src="address_all_new.js"></script>
+<script type="text/javascript" src="addressEdit.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        jQuery(function() {
+            //BD流量统计数组定义
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?4982d57ea12df95a2b24715fb6440726";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(hm, s);
+            })();
+        });
+
+        //流量统计平台
+        var _msq = _msq || [] ;
+        _msq.push(['setDomainId',100]);
+        _msq.push(['trackPageView']);
+        (function() {
+            var ms = document.createElement('script');
+            ms.type ='text/javascript';
+            ms.async = true ;
+            ms.src = '//s1.mi.com/js/xmst.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ms,s);
+        })();
+    </script>
+
+
+</body></html>
